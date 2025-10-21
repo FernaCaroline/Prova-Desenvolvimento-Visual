@@ -1,0 +1,24 @@
+###
+
+### POST /api/consumo/cadastrar
+
+POST http://localhost:5014/api/consumo/cadastrar
+Content-Type: application/json
+
+{
+"Id": 3,
+ "cpf": "123.456.789-00",
+  "mes": 10,
+  "ano": 2025,
+  "m3Consumidos": 20,
+    "bandeira": "Vermelha"
+
+}
+
+### listar
+
+GET http://localhost:5014/api/consumo/listar
+
+### buscar por cpf, mes e ano
+
+GET /api/consumo/buscar/123.456.789-00/10/2025
